@@ -25,9 +25,9 @@ public class CoolWeatherOpenHelper extends SQLiteOpenHelper{
 			+"province_id integer )";
 	
 	/*
-	 * 	Country表建表语句
+	 * 	County表建表语句
 	 * */
-	public static final String CREATE_COUNTRY = "create table Province ("
+	public static final String CREATE_COUNTY = "create table Province ("
 			+"id integer primary key autoincrement"
 			+"province_name text ,"
 			+"province_code text ,"
@@ -44,7 +44,7 @@ public class CoolWeatherOpenHelper extends SQLiteOpenHelper{
 		// TODO Auto-generated method stub
 		db.execSQL(CREATE_PROVINCE);//创建Province表
 		db.execSQL(CREATE_CITY);//创建City表
-		db.execSQL(CREATE_COUNTRY);//创建Country表
+		db.execSQL(CREATE_COUNTY);//创建county表
 	}
 	
 	@Override
